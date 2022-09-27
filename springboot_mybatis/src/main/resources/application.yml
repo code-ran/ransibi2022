@@ -1,0 +1,24 @@
+server:
+  port: 8088
+#my macbookair setting
+#spring:
+#  datasource:
+#    username: root
+#    password: 123456
+#    url: jdbc:mysql://127.0.0.1:3306/mytest?characterEncoding=UTF-8&serverTimezone=UTC
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#my companyPc setting
+spring:
+  datasource:
+    username: root
+    password: 1234
+    url: jdbc:mysql://127.0.0.1:3306/mytest?characterEncoding=UTF-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+mybatis:
+  mapper-locations: classpath:mapper/**.xml
+  type-aliases-package: com.ransibi.springbootmybatis.dao
+
+
