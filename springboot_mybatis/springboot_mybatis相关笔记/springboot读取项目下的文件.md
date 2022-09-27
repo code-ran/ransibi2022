@@ -82,11 +82,35 @@ void getData() throws IOException {
 注意：这两种方式打成jar包很有可能读取不到数据。解决方案：修改 Json 文件的读取方式，代码如下：
 
 ```java
-public static String getFileJson() throws IOException {
-   ClassPathResource classPathResource = new ClassPathResource("static/data.json");
-   byte[]  bytes= FileCopyUtils.copyToByteArray(classPathResource.getInputStream());
-   rturn new String(bytes);
-   }
+    public String getMockData() throws Exception {
+        try {
+        ClassPathResource classPathResource = new ClassPathResource("static/mockdata.json");
+        InputStream in = classPathResource.getInputStream();
+        InputStreamReader inputStreamReader = new InputStreamReader(in);
+        BufferedReader br = new BufferedReader(inputStreamReader);
+        String readLine = null;
+        StringBuilder sb = new StringBuilder();
+        while ((readLine = br.readLine()) != null) {
+        if (readLine.charAt(0) == '-') {
+        continue;
+        } else {
+        sb.append(readLine);
+        sb.append('\r');
+        }
+        }
+        br.close();
+        String ret = sb.toString();
+//            return ret;
+        JSONObject jsonObject = JSON.parseObject(ret);
+        JSONArray jsonArray = jsonObject.getJSONArray("result");
+        String result = JSONArray.toJSONString(jsonArray);
+        return result;
+        } catch (IOException e) {
+        throw new Exception("数据读取错误");
+        } catch (NullPointerException e) {
+        throw new Exception("输入流为空");
+        }
+        }
 ```
 注意，如果使用了maven，那么需要在build下，resources里面添加包含文件，不然还是读取到这个路径下的文件。
 ![image-20220827151543651](springboot读取项目下的文件/image-20220827151543651.png)
