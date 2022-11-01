@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Statistic BeginTime="2022-07-01 00:00:00" EneTime="2022-08-01 00:00:00" StatTime="2022-08-16 15:48:13" Desc="厂站,设备运行统计数据汇总">
+    <AreaNode Desc="按地区汇总">
+        <Area AreaId="用户" AreaName="用户运维" AreaGrade="0.00" Desc="单地区汇总数据">
+            <AreaSum Desc="单地区统计总结果">
+                <StnAccessData TotalNum="29" AccessNum="29" AccessRate="1.000000" Desc="本地区下所有厂站接入统计汇总" />
+                <StnOfflineDataI TotalRunTime="0" TotalOfflineTime="0" OfflineRate="0.000000" OfflineMaxTime="0" Grade="0.00" Desc="本地区下所有厂站在I区的通信断开统计数据汇总" OfflineNumber="0" />
+                <StnOfflineDataII TotalRunTime="77673600" TotalOfflineTime="0" OfflineRate="0.000000" OfflineMaxTime="0" Grade="0.00" Desc="本地区下所有厂站在II区的通信断开统计数据汇总" OfflineNumber="0" />
+                <DevAccessData TotalNum="221" AccessNum="209" AccessRate="0.945701" Desc="本地区下所有装置覆盖统计汇总" />
+                <DevOfflineData TotalRunTime="559785600" TotalOfflineTime="0" TotalOutLimitOfflineTime="0" OfflineRate="0.000000" TotalOverhaulTime="0" OverhaulRate="0.000000" Grade="0.00" Desc="本地区下所有装置的通信断开/检修统计数据汇总" OfflineNumber="0" />
+            </AreaSum>
+            <StationSum Desc="单地区下所有厂站数据汇总">
+                <Station StnId="化肥" StnName="220kV.化肥变" MfgrName="纽约" StnGrade="0.00">
+                    <StnDataSum Desc="全厂站数据统计">
+                        <StnOfflineDataI TotalRunTime="-" TotalOfflineTime="-" OfflineRate="-" OfflineMaxTime="-" Grade="-" Desc="本厂站在I区的通信断开统计数据" OfflineNumber="-" />
+                        <StnOfflineDataII TotalRunTime="2678400" TotalOfflineTime="0" OfflineRate="0.000000" OfflineMaxTime="0" Grade="0.00" Desc="本厂站在II区的通信断开统计数据" OfflineNumber="0" />
+                        <DevAccessData TotalNum="1" AccessNum="1" AccessRate="1.000000" Desc="本厂站下所有装置接入统计数据汇总" />
+                        <DevOfflineData TotalRunTime="2678400" TotalOfflineTime="0" TotalOutLimitOfflineTime="0" OfflineRate="0.000000" TotalOverhaulTime="0" OverhaulRate="0.000000" Grade="0.00" Desc="本厂站下所有装置的通信断开/检修统计数据汇总" OfflineNumber="0" OverhaulNumber="0" />
+                    </StnDataSum>
+                    <DevDataSum Desc="厂站下所有设备数据统计" DevGrade="0.00">
+                        <Dev DevId="化肥LB00200" DevName="220kV故障录波器" OfflineNumber="0" OverhaulNumber="0">
+                            <DevOfflineData TotalRunTime="2678400" TotalOfflineTime="0" TotalOutLimitOfflineTime="0" OfflineRate="0.000000" TotalOverhaulTime="0" OverhaulRate="0.000000" Grade="0.00" Desc="单装置的通信断开/检修统计数据汇总" />
+                        </Dev>
+                    </DevDataSum>
+                </Station>
+            </StationSum>
+        </Area>
+    </AreaNode>
+    <MfgrNode Desc="按生产厂家汇总">
+        <Mfgr MfgrId="纽约" StnNum="63">
+            <MfgrSum>
+                <StnOfflineDataI TotalRunTime="2678400" TotalOfflineTime="0" OfflineRate="0.000000" OfflineMaxTime="0" Grade="0.00" Desc="本生产厂家下所有厂站在I区的通信断开统计数据汇总" OfflineNumber="0" />
+                <StnOfflineDataII TotalRunTime="166060800" TotalOfflineTime="0" OfflineRate="0.000000" OfflineMaxTime="0" Grade="0.00" Desc="本生产厂家下所有厂站在II区的通信断开统计数据汇总" OfflineNumber="0" />
+                <DevAccessData TotalNum="1292" AccessNum="1156" AccessRate="0.894737" Desc="本生产厂家下所有设备接入情况的统计数据汇总" />
+                <DevOfflineData TotalRunTime="3096230400" TotalOfflineTime="0" OfflineRate="0.000000" TotalOverhaulTime="0" OverhaulRate="0.000000" Grade="0.00" Desc="本生产厂家下所有设备通信断开、检修的统计数据汇总" OfflineNumber="0" OverhaulNumber="0" />
+            </MfgrSum>
+            <StnSum>
+                <Area AreaId="白城" AreaName="白城地区">
+                    <Station StnId="测试厂站" StnName="测试厂站220kV变电站">
+                        <StnDataSum>
+                            <StnOfflineDataI TotalRunTime="2678400" TotalOfflineTime="0" OfflineRate="0.000000" OfflineMaxTime="0" Grade="0.00" Desc="本厂站在I区的通信断开统计数据汇总" OfflineNumber="0" />
+                            <StnOfflineDataII TotalRunTime="-" TotalOfflineTime="-" OfflineRate="-" OfflineMaxTime="-" Grade="-" Desc="本厂站在II区的通信断开统计数据汇总" OfflineNumber="0" />
+                            <DevAccessData TotalNum="22" AccessNum="28" AccessRate="1.272727" Desc="本厂站下所有设备接入情况统计数据汇总" />
+                            <DevOfflineData TotalRunTime="74995200" TotalOfflineTime="0" OfflineRate="0.000000" TotalOverhaulTime="0" OverhaulRate="0.000000" Grade="0.00" Desc="本厂站下所有设备通信断开、检修的统计数据汇总" OfflineNumber="0" OverhaulNumber="0" />
+                        </StnDataSum>
+                        <DevDataSum>
+                            <Dev DevId="测试厂站LB00200" DevName="220kV 1号故障录波器（A网）" OfflineNumber="0" OverhaulNumber="0">
+                                <DevOfflineData TotalRunTime="2678400" TotalOfflineTime="0" OfflineRate="0.000000" TotalOverhaulTime="0" OverhaulRate="0.000000" Grade="0.00" Desc="单装置的通信断开/检修统计数据汇总" />
+                            </Dev>
+                        </DevDataSum>
+                    </Station>
+                </Area>
+            </StnSum>
+        </Mfgr>
+    </MfgrNode>
+    <MngrNode Desc="按调管单位汇总">
+        <Mngr MngrName="调管00" StnNum="170">
+            <MngrSum Desc="本调管单位统计总结果">
+                <StnAccessData TotalNum="170" AccessNum="170" AccessRate="1.000000" Desc="本调管单位下所有厂站接入统计汇总" />
+                <StnOfflineDataI TotalRunTime="24105600" TotalOfflineTime="0" OfflineRate="0.000000" OfflineMaxTime="0" Grade="0.00" Desc="本调管单位下厂站在I区的通信断开统计数据汇总" OfflineNumber="0" />
+                <StnOfflineDataII TotalRunTime="431222400" TotalOfflineTime="0" OfflineRate="0.000000" OfflineMaxTime="0" Grade="0.00" Desc="本调管单位下厂站在II区的通信断开统计数据汇总" OfflineNumber="0" />
+                <DevAccessData TotalNum="3998" AccessNum="3666" AccessRate="0.916958" Desc="本调管单位下所有设备接入统计汇总" />
+                <DevOfflineData TotalRunTime="9819014400" TotalOfflineTime="0" OfflineRate="0.000000" OfflineMaxTime="0" Grade="0.00" Desc="本调管单位下所有设备通信断开、检修的统计数据汇总" OfflineNumber="0" OverhaulNumber="0" />
+            </MngrSum>
+            <StnSum Desc="本调管单位下各厂站数据统计">
+                <Station StnId="测试厂站1" StnName="220kV.测试厂站1变" MfgrName="纽约" StnGrade="0.00">
+                    <StnDataSum Desc="全厂站数据统计">
+                        <StnOfflineDataI TotalRunTime="-" TotalOfflineTime="-" OfflineRate="-" OfflineMaxTime="-" Grade="-" Desc="本厂站在I区的通信断开统计数据" OfflineNumber="-" />
+                        <StnOfflineDataII TotalRunTime="2678400" TotalOfflineTime="0" OfflineRate="0.000000" OfflineMaxTime="0" Grade="0.00" Desc="本厂站在II区的通信断开统计数据" OfflineNumber="0" />
+                        <DevAccessData TotalNum="36" AccessNum="36" AccessRate="1.000000" Desc="本厂站下所有装置接入统计数据汇总" />
+                        <DevOfflineData TotalRunTime="96422400" TotalOfflineTime="0" TotalOutLimitOfflineTime="0" OfflineRate="0.000000" TotalOverhaulTime="0" OverhaulRate="0.000000" Grade="0.00" Desc="本厂站下所有装置的通信断开/检修统计数据汇总" OfflineNumber="0" OverhaulNumber="0" />
+                    </StnDataSum>
+                    <DevDataSum Desc="厂站下所有设备数据统计" DevGrade="0.00">
+                        <Dev DevId="测试厂站1BH001" DevName="#1主变1号微机保护CSC-326T2-DA-G-A" OfflineNumber="0" OverhaulNumber="0">
+                            <DevOfflineData TotalRunTime="2678400" TotalOfflineTime="0" TotalOutLimitOfflineTime="0" OfflineRate="0.000000" TotalOverhaulTime="0" OverhaulRate="0.000000" Grade="0.00" Desc="单装置的通信断开/检修统计数据汇总" />
+                        </Dev>
+                    </DevDataSum>
+                </Station>
+            </StnSum>
+        </Mngr>
+    </MngrNode>
+</Statistic>
