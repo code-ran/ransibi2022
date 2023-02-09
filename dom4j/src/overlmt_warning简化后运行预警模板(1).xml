@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Statistic type="OverlmtStat" BeginTime="2022-11-04 00:00:00" EndTime="2022-11-05 00:00:00" StatTime="2022-11-04 15:44:04">
+    <Area id="地区19" name="地区19">
+        <Station id="厂站11" name="厂站11">
+            <StnCommuOverLmtInfo   type="5" desc="频繁厂站中断越限" threshold="(阀值)1" frequency="(当前发生频率即条数,暂取2区)2" >
+                <StnOfflineDetailII Desc="本厂站II区离线明细">
+                    <OfflineTime BeginTime="2017-05-11 00:00:00" EndTime="2017-05-11 11:42:37" RelTime="42157" Reason="9999" Grade="0.00" />
+					          <OfflineTime BeginTime="2017-05-11 00:00:00" EndTime="2017-05-11 11:42:37" RelTime="42157" Reason="9999" Grade="0.00" />
+                </StnOfflineDetailII>
+			      </StnCommuOverLmtInfo>
+            <Dev ptid="断保5" name="断保5">
+            	  <OverLimitInfo type="1" desc="频繁动作越限" threshold="(阀值)1" frequency="(当前发生频率即条数)1" >
+					         <Action property="2" desc="启动" num="2">
+	                      <ActionDetail name="4335未定义"  num="2" />
+	                 </Action>
+	                 <TrendStat>
+                        <TrendStatDetail num="51" time="2022-11-04 12:16:00" />
+                        <TrendStatDetail num="0" time="2022-11-04 15:44:04" />
+                    </TrendStat>
+				        </OverLimitInfo>          	
+                <OverLimitInfo type="2" desc="频繁告警越限" threshold="0" frequency="51">
+                    <Alarm type="1" desc="故障告警" num="29">
+                        <InfofunAlarm info_fun="5" desc="存储器或芯片告警" num="14">
+                            <AlarmDetail name="保护CPU插件异常" num="2" />
+                            <AlarmDetail name="启动DSP内存出错" num="2" />
+                        </InfofunAlarm>
+                    </Alarm>
+                    <TrendStat>
+                        <TrendStatDetail num="51" time="2022-11-04 12:16:00" />
+                        <TrendStatDetail num="0" time="2022-11-04 15:44:04" />
+                    </TrendStat>
+                </OverLimitInfo>
+                <OverLimitInfo type="3" desc="频繁开关量变位越限" threshold="(阀值)1" frequency="(当前发生频率即条数)1"  >
+				            <Dichange desc="开关量变位" num="1">
+					               <DichangeDetail name="" num="2" />
+				            </Dichange>	
+				            <TrendStat>
+                        <TrendStatDetail num="51" time="2022-11-04 12:16:00" />
+                        <TrendStatDetail num="0" time="2022-11-04 15:44:04" />
+                    </TrendStat>
+				        </OverLimitInfo>
+                <OverLimitInfo type="4" desc="频繁录波越限" threshold="0" frequency="3">
+                    <Wavefile type="2" desc="故障录波" num="3">
+                        <WavefileDetail filename="P_J2201A_RCD_35488_20210804_183326_994_f.cfg" trigger_time="2021-08-04 18:33:26" faulttype="CG" desc="C相接地">
+                            <Ms>914</Ms>
+                            <Savepath desc="">山智变/保护/220kV断路器主一保护PCS-921A-DG-N(山智BH00007)/</Savepath>
+                        </WavefileDetail>
+                    </Wavefile>
+                </OverLimitInfo>
+                <OverLimitInfo type="6" desc="频繁设备中断越限" threshold="(阀值)1" frequency="(当前发生频率即条数)1" >
+					          <OfflineDetail Desc="装置离线明细">
+                        <OfflineTime BeginTime="2017-05-11 00:00:00" EndTime="2017-05-11 11:27:08" RelTime="41228" Reason="0" Grade="0.00" />
+                    </OfflineDetail>
+				        </OverLimitInfo>
+				        <OverLimitInfo type="7" desc="频繁保护启动越限" threshold="(阀值)1" frequency="(当前发生频率即条数)1" >
+					          <DevStart type="1" desc="启动" num="1">
+                        <DevStartDetail name="4335未定义" num="2" />
+                    </DevStart>
+                    <TrendStat>
+                        <TrendStatDetail num="200" time="2022-11-04 12:16:00" />
+                        <TrendStatDetail num="0" time="2022-11-04 15:44:04" />
+                    </TrendStat>
+				        </OverLimitInfo>
+                <OverLimitInfo type="8" desc="频繁通道异常越限" threshold="0" frequency="200">
+                    <ChnAnomaly type="1" desc="通道异常" num="200">
+                        <ChnAnomalyDetail name="过程层定值出错" num="2" />
+                        <ChnAnomalyDetail name="过程层内存出错" num="2" />
+                        <ChnAnomalyDetail name="过程层FPGA配置出错" num="1" />
+                        <ChnAnomalyDetail name="GOOSE总告警" num="1" />
+                    </ChnAnomaly>
+                    <TrendStat>
+                        <TrendStatDetail num="200" time="2022-11-04 12:16:00" />
+                        <TrendStatDetail num="0" time="2022-11-04 15:44:04" />
+                    </TrendStat>
+                </OverLimitInfo>
+                <OverLimitInfo type="9" desc="频繁闭锁异常越限" threshold="(阀值)1" frequency="(当前发生频率即条数)2" >
+				            <LockAlarm type="1" desc="闭锁异常" num="2">
+				                <LockAlarmDetail  name="设备闭锁"  num="2" />
+				            </LockAlarm>
+				            <TrendStat>
+                        <TrendStatDetail num="51" time="2022-11-04 12:16:00" />
+                        <TrendStatDetail num="0" time="2022-11-04 15:44:04" />
+                    </TrendStat>
+				        </OverLimitInfo>
+            </Dev>
+        </Station>
+    </Area>
+    <OverLmtSummary desc="频繁越限概要统计">
+        <Action desc="频繁动作越限设备数" devnum="0" threshold="0" />
+        <Alarm desc="频繁告警越限设备数" devnum="8" threshold="0" />
+        <Dichange desc="频繁变位越限设备数" devnum="0" threshold="0" />
+        <Wavefile desc="频繁录波越限设备数" devnum="23" threshold="0" />
+        <DevStart desc="频繁保护启动越限设备数" devnum="0" threshold="0" />
+        <ChnAnomaly desc="频繁通道异常越限设备数" devnum="7" threshold="0" />
+        <LockAlarm desc="频繁闭锁异常越限设备数" devnum="1" threshold="1" />
+        <DevCommu desc="频繁通讯中断越限设备数" devnum="0" threshold="0" />
+        <StnCommu desc="频繁通讯中断越限厂站数" stnnum="0" threshold="0" />
+        <OverLmtDevRunNum desc="频繁设备运行越限设备数" devnum="29" />
+        <OverLmtDevNum desc="频繁越限设备总数" devnum="29" />
+        <OverLmtStnNum desc="频繁越限厂站总数" stnnum="7" />
+    </OverLmtSummary>
+</Statistic>
